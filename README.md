@@ -15,5 +15,5 @@ Repositorio de fuentes, utilizado como un CDN para proyectos web.
 - Plus Jakarta Sans
 
 > [!NOTE]
-> Para utilizarlas solo copia la URI correspondiente a cada hoja de estilos almacenada en el repositorio.
+> Para utilizarlas solo abre el archivo de hojas de estilo y en la ventana que se muestra haz clic en el botón `Raw` para obtener la URI en la barra de direcciones del navegador.
 
