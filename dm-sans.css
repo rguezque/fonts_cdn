@@ -1,0 +1,127 @@
+@font-face {
+    font-family: "DM Sans";
+    font-weight: 100;
+    font-style: normal;
+    src: url('./dm-sans/DMSans-Thin.ttf');
+}
+
+@font-face {
+    font-family: "DM Sans";
+    font-weight: 200;
+    font-style: normal;
+    src: url('./dm-sans/DMSans-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: "DM Sans";
+    font-weight: 300;
+    font-style: normal;
+    src: url('./dm-sans/DMSans-Light.ttf');
+}
+
+@font-face {
+    font-family: "DM Sans";
+    font-weight: 400;
+    font-style: normal;
+    src: url('./dm-sans/DMSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: "DM Sans";
+    font-weight: 500;
+    font-style: normal;
+    src: url('./dm-sans/DMSans-Medium.ttf');
+}
+
+@font-face {
+    font-family: "DM Sans";
+    font-weight: 600;
+    font-style: normal;
+    src: url('./dm-sans/DMSans-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-style: normal;
+    src: url('./dm-sans/DMSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: "DM Sans";
+    font-weight: 800;
+    font-style: normal;
+    src: url('./dm-sans/DMSans-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: "DM Sans";
+    font-weight: 900;
+    font-style: normal;
+    src: url('./dm-sans/DMSans-Black.ttf');
+}
+
+
+
+@font-face {
+    font-family: "DM Sans";
+    font-weight: 100;
+    font-style: italic;
+    src: url('./dm-sans/DMSans-ThinItalic.ttf');
+}
+
+@font-face {
+    font-family: "DM Sans";
+    font-weight: 200;
+    font-style: italic;
+    src: url('./dm-sans/DMSans-ExtraLightItalic.ttf');
+}
+
+@font-face {
+    font-family: "DM Sans";
+    font-weight: 300;
+    font-style: italic;
+    src: url('./dm-sans/DMSans-LightItalic.ttf');
+}
+
+@font-face {
+    font-family: "DM Sans";
+    font-weight: 400;
+    font-style: italic;
+    src: url('./dm-sans/DMSans-Italic.ttf');
+}
+
+@font-face {
+    font-family: "DM Sans";
+    font-weight: 500;
+    font-style: italic;
+    src: url('./dm-sans/DMSans-MediumItalic.ttf');
+}
+
+@font-face {
+    font-family: "DM Sans";
+    font-weight: 600;
+    font-style: italic;
+    src: url('./dm-sans/DMSans-SemiBoldItalic.ttf');
+}
+
+@font-face {
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-style: italic;
+    src: url('./dm-sans/DMSans-BoldItalic.ttf');
+}
+
+@font-face {
+    font-family: "DM Sans";
+    font-weight: 800;
+    font-style: italic;
+    src: url('./dm-sans/DMSans-ExtraBoldItalic.ttf');
+}
+
+@font-face {
+    font-family: "DM Sans";
+    font-weight: 900;
+    font-style: italic;
+    src: url('./dm-sans/DMSans-BlackItalic.ttf');
+}
