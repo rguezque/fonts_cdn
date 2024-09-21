@@ -1,0 +1,49 @@
+{
+    "cdn": "https://cdn.pressmark.net/fonts_cdn/",
+    "fonts": [
+        {
+            "fontname": "Averia Serif Libre",
+            "stylesheet": "averia-serif-libre.css",
+            "type": "Serif"
+        },
+        {
+            "fontname": "Crimson Text",
+            "stylesheet": "crimson-text.css",
+            "type": "Serif"
+        },
+        {
+            "fontname": "DM Sans",
+            "stylesheet": "dm-sans.css",
+            "type": "Sans Serif"
+        },
+        {
+            "fontname": "JetBrains Mono",
+            "stylesheet": "jetbrains-mono.css",
+            "type": "Monospaced"
+        },
+        {
+            "fontname": "Merriweather",
+            "stylesheet": "merriweather.css",
+            "type": "Serif"
+        },{
+            "fontname": "Moms Typewriter",
+            "stylesheet": "momstypewriter.css",
+            "type": "Typewriter"
+        },
+        {
+            "fontname": "Montserrat",
+            "stylesheet": "montserrat.css",
+            "type": "Sans Serif"
+        },
+        {
+            "fontname": "Nunito",
+            "stylesheet": "nunito.css",
+            "type": "Sans Serif"
+        },
+        {
+            "fontname": "Plus Jakarta Sans",
+            "stylesheet": "plus-jakarta-sans.css",
+            "type": "Sans Serif"
+        }
+    ]
+}

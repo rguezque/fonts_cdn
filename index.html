@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts CDN</title>
+
+    <link rel="stylesheet" href="./jetbrains-mono.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7b35949868.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            font-family: 'JetBrains Mono', monospace;
+            font-smooth: always;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <div class="container">
+            <div class="my-5">
+                <h1 class="text-center fw-bolder">Fonts CDN</h1>
+            </div>
+
+            <div id="fonts-list" class="row row-cols-1 row-cols-md-3">
+
+            </div>
+        </div>
+    </main>
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', async function(event) {
+            const request = await fetch('http://localhost:8000/data.json');
+            const fontsData = await request.json();
+
+            const fonts = fontsData.fonts;
+            const cdnUrl = fontsData.cdn.replace(/^\/+|\/+$/g, '');
+
+            fonts.forEach(font => {
+                console.log(font.fontname);
+                // Se agrega la hoja de estilo correspondiente para poder mostrar como se ve la tipografia
+                const css = document.createElement('link');
+                css.setAttribute('rel', 'stylesheet');
+                css.setAttribute('href', `http://localhost:8000/${font.stylesheet}`);
+                document.head.appendChild(css);
+
+                // Se crea la columna
+                const col = document.createElement('div');
+                col.setAttribute('class', 'col');
+
+                // Se crea la tarjeta informativa de la fuente
+                const alertCard = document.createElement('div');
+                alertCard.setAttribute('class', 'alert alert-light');
+                
+                const fontTitle = `<h2 style="font-family: '${font.fontname}';">${font.fontname}</h2><p class="small">${font.type}</p>`;
+                const inputGroup = [];
+                inputGroup.push('<div class="input-group mb-3">');
+                inputGroup.push(`<input type="text" class="form-control" readonly value="${cdnUrl}/${font.stylesheet}">`);
+                inputGroup.push('<button onclick="copyurl(this)" class="btn btn-light border" type="button" id="button-copy"><i class="fa fa-clipboard"></i></button>');
+                inputGroup.push('</div>');
+                
+                alertCard.innerHTML = fontTitle+inputGroup.join('');
+                
+
+                col.appendChild(alertCard);
+
+                const fontsListcontainer = document.getElementById('fonts-list');
+                fontsListcontainer.appendChild(col);
+            });
+
+            window.copyurl = copyurl;
+            function copyurl(element) {
+                const urlString = element.parentNode.querySelector('input[type="text"]').value;
+                const copyAction = navigator.clipboard.writeText(urlString);
+
+                copyAction.then(() => {
+                    element.innerHTML = '<i class="fa fa-clipboard-check"></i>';
+                    setTimeout(() => {
+                        element.innerHTML = '<i class="fa fa-clipboard"></i>';
+                    }, 5000);
+                })
+                .catch(error => {
+                    console.error(error);
+                    element.innerHTML = '<i class="fa fa-triangle-exclamation"></i>';
+                    setTimeout(() => {
+                        element.innerHTML = '<i class="fa fa-clipboard"></i>';
+                    }, 5000);
+                });
+            }
+        });
+    </script>
+    
+</body>
+</html>
