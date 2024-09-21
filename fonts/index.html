@@ -28,7 +28,7 @@
                 <h1 class="text-center fw-bolder">Fonts CDN</h1>
             </div>
 
-            <div id="fonts-list" class="row row-cols-1 row-cols-md-3">
+            <div id="fonts-list" class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
 
             </div>
         </div>
@@ -36,7 +36,7 @@
 
     <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', async function(event) {
-            const request = await fetch('http://localhost:8000/data.json');
+            const request = await fetch('./data.json');
             const fontsData = await request.json();
 
             const fonts = fontsData.fonts;
@@ -47,7 +47,7 @@
                 // Se agrega la hoja de estilo correspondiente para poder mostrar como se ve la tipografia
                 const css = document.createElement('link');
                 css.setAttribute('rel', 'stylesheet');
-                css.setAttribute('href', `http://localhost:8000/${font.stylesheet}`);
+                css.setAttribute('href', `${cdnUrl}/${font.stylesheet}`);
                 document.head.appendChild(css);
 
                 // Se crea la columna
@@ -59,9 +59,10 @@
                 alertCard.setAttribute('class', 'alert alert-light');
                 
                 const fontTitle = `<h2 style="font-family: '${font.fontname}';">${font.fontname}</h2><p class="small">${font.type}</p>`;
+                const link = `<link rel="stylesheet" href="${cdnUrl}/${font.stylesheet}" integrity="${font.integrity}" crossorigin="anonymous">`;
                 const inputGroup = [];
                 inputGroup.push('<div class="input-group mb-3">');
-                inputGroup.push(`<input type="text" class="form-control" readonly value="${cdnUrl}/${font.stylesheet}">`);
+                inputGroup.push(`<input type="text" class="form-control" readonly value='${link}'>`);
                 inputGroup.push('<button onclick="copyurl(this)" class="btn btn-light border" type="button" id="button-copy"><i class="fa fa-clipboard"></i></button>');
                 inputGroup.push('</div>');
                 

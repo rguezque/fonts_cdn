@@ -4,46 +4,55 @@
         {
             "fontname": "Averia Serif Libre",
             "stylesheet": "averia-serif-libre.css",
-            "type": "Serif"
+            "type": "Serif",
+            "integrity": "sha384-4L+t3CS2VHiZbT8hd0nNVzd9NqM6lm1c5uk+ami/W48oX1AbK6sD7YqOJhafA9Wq"
         },
         {
             "fontname": "Crimson Text",
             "stylesheet": "crimson-text.css",
-            "type": "Serif"
+            "type": "Serif",
+            "integrity": "sha384-zQyv8ohVWJkQS4UHMzmAQ0Y8zReDxhMhzfP7bQbCDGBaXxdP87d4PSYqAULKFT35"
         },
         {
             "fontname": "DM Sans",
             "stylesheet": "dm-sans.css",
-            "type": "Sans Serif"
+            "type": "Sans Serif",
+            "integrity": "sha384-zQyv8ohVWJkQS4UHMzmAQ0Y8zReDxhMhzfP7bQbCDGBaXxdP87d4PSYqAULKFT35"
         },
         {
             "fontname": "JetBrains Mono",
             "stylesheet": "jetbrains-mono.css",
-            "type": "Monospaced"
+            "type": "Monospaced",
+            "integrity": "sha384-MyYUiB0VFR2XwJQiIiWWTnxpn1q4truVJd0DqXUXM6r7D/X/W51sM1NsTRSBXvG2"
         },
         {
             "fontname": "Merriweather",
             "stylesheet": "merriweather.css",
-            "type": "Serif"
+            "type": "Serif",
+            "integrity": "sha384-nc0hs2FaTLX1KsZIOolKC43bpaaenLdw3r9iU720UbPRV7m+08kt97qnRk0TT3xV"
         },{
             "fontname": "Moms Typewriter",
             "stylesheet": "momstypewriter.css",
-            "type": "Typewriter"
+            "type": "Typewriter",
+            "integrity": "sha384-tZLwj9p7FypN9fiVFw8at/klZg+61mxoS5wLZwxKfCaN+fLmtnqvewh8EwdeNER5"
         },
         {
             "fontname": "Montserrat",
             "stylesheet": "montserrat.css",
-            "type": "Sans Serif"
+            "type": "Sans Serif",
+            "integrity": "sha384-vPdJ2LY7iqkaCZBlHLKTiG3E00L3RT4QQZxgbXDS6W7E4RU2CiLVx27XMzaTLlPC"
         },
         {
             "fontname": "Nunito",
             "stylesheet": "nunito.css",
-            "type": "Sans Serif"
+            "type": "Sans Serif",
+            "integrity": "sha384-pa8FIfU6IZfsdpmJPzrj3vxrbztgcV0tkq7IOLU5+lva/VKzuVz9cXuYO7ZOoiZR"
         },
         {
             "fontname": "Plus Jakarta Sans",
             "stylesheet": "plus-jakarta-sans.css",
-            "type": "Sans Serif"
+            "type": "Sans Serif",
+            "integrity": "sha384-augoLGBzHLUSbg7LonUiD7GL+tb79p19/D2Q9zQUTufezqYIKW8fYTo9uw7pUoVN"
         }
     ]
 }
