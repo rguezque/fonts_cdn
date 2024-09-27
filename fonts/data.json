@@ -53,6 +53,18 @@
             "stylesheet": "plus-jakarta-sans.css",
             "type": "Sans Serif",
             "integrity": "sha384-augoLGBzHLUSbg7LonUiD7GL+tb79p19/D2Q9zQUTufezqYIKW8fYTo9uw7pUoVN"
+        },
+        {
+            "fontname": "Bell MT",
+            "stylesheet": "bell-mt.css",
+            "type": "Serif",
+            "integrity": "sha384-UIF41OE1u23NhJ7kS40x/pgs/+JzPfGGjnLZ/EvGrUwDz6eWmCd9S+WRo0Tfw846"
+        },
+        {
+            "fontname": "Javanese Text",
+            "stylesheet": "javanese-text.css",
+            "type": "Serif",
+            "integrity": "sha384-yMJeZUpmWM+vQj5LnPslqFcFNl6qB6b52a6+yBk7sw0vUjLTikSBZ+DsPg2Jf4pA"
         }
     ]
 }
